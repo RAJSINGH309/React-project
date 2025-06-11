@@ -10,7 +10,7 @@ const WeatherApp = () => {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
 
-  const API_URL = "http://api.weatherapi.com/v1/current.json?key=bab9a0dad4e74865a49140424250903&q=";
+  const API_URL = import.meta.env.VITE_KEY;
    // using API key to fetch weather details//
   const style={
     
